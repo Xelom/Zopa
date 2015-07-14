@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZOPA</title>
+    <link rel="stylesheet" href="assets/css/material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/ng/angular.min.js"></script>
+  </head>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">ZOPA - Easy SSH GUI</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Open New Connection</a>
+
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Recent Connections</a>
+        <a class="mdl-navigation__link" href="">Backup Settings</a>
+        <a class="mdl-navigation__link" href="">Search</a>
+        <a class="mdl-navigation__link" href="">General Settings</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content" ng-view><!-- Your content goes here --></div>
+    </main>
+  </div>
+  </body>
+</html>
