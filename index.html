@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="zopaApp">
   <head>
     <title>ZOPA</title>
     <link rel="stylesheet" href="assets/css/material.min.css">
@@ -7,6 +7,7 @@
       rel="stylesheet">
     <script src="assets/js/material.min.js"></script>
     <script src="assets/js/ng/angular.min.js"></script>
+    <script src="assets/js/ng/app.js"></script>
   </head>
 
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -30,7 +31,14 @@
       </nav>
     </div>
     <main class="mdl-layout__content">
-      <div class="page-content" ng-view><!-- Your content goes here --></div>
+      <div class="page-content" ng-view>
+        <div>
+          <label>Name:</label>
+          <input type="text" ng-model="yourName" placeholder="Enter a name here">
+          <hr>
+          <h1>Hello {{yourName}}!</h1>
+        </div>
+      </div>
     </main>
   </div>
   </body>
