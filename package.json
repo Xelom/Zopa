@@ -1,5 +1,8 @@
 {
   "name"    : "Zopa",
   "version" : "0.0.1",
-  "main"    : "main.js"
+  "main"    : "main.js",
+  "dependencies": {
+    "dropbox": "0.10.3"
+  }
 }
